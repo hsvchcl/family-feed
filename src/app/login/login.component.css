@@ -1,4 +1,7 @@
 .login__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
     height: 100%;
     width: 100%;
     background: #C6FFDD;
@@ -6,63 +9,68 @@
     background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
 }
 
-.login__card_container{
-    text-align: center;
+.login__access_section_container {
+    height: auto;
+    width: 450px;
+    padding: 50px;
 }
 
-.login__card {
-    opacity: .8;
-    min-width: 400px;
-    min-height: 250px;
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
+.login__access_section {
+    height: 100%;
+    width: 100%;
+    background-color: white;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    row-gap: 30px;
-    transition: .5s;
+    gap: 30px;
 }
 
-.login__card:hover {
-    transform: scale(1.02);
-    opacity: 1;
-    background-color: white;
-}
-
-.login__card_header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.login__card_button_container button {
+.login__button_container{
     width: 100%;
-    height: 50px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 100px;
 }
 
-.login__card_button_container p {
-    font-size: 16px;
-    color: rgb(42, 42, 42);
+button {
+    width: 90%;
+    height: 60px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: medium;
+    transition: .2s;
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+button.google {
+    background-color: #DB4437;
+    color: white;
+}
+
+button.facebook {
+    background-color: #0165E1;
+    color: white;
+}
+
+.login__logo_container{
+    width: 90%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
     text-align: center;
 }
 
-.login__button {
-    background-color: transparent;
-    border: 1px solid gray;
-    transition: .2s;
-    border-radius: 50px;
-}
-
-.login__google_button:hover{
-    background-color: #f7797d;
-    color: white;
-    border: 2px solid #f7797d;
-}
-.login__facebook_button:hover{
-    background-color: #3b5998;
-    color: white;
-    border: 2px solid #3b5998;
+.login__logo_container p{
+    font-size: 22px;
+    color: grey;
+    font-weight: 300;
 }

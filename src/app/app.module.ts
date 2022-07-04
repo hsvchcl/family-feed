@@ -17,6 +17,7 @@ import { FeedTimeLineComponent } from './feed/components/feed-time-line/feed-tim
 import { FeedExploreComponent } from './feed/components/feed-explore/feed-explore.component';
 import { FeedNotificationsComponent } from './feed/components/feed-notifications/feed-notifications.component';
 import { FeedMessagesComponent } from './feed/components/feed-messages/feed-messages.component';
+import { MainComponent } from './feed/layout/main/main.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FeedMessagesComponent } from './feed/components/feed-messages/feed-mess
     FeedExploreComponent,
     FeedNotificationsComponent,
     FeedMessagesComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
