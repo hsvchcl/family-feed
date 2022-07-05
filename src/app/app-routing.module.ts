@@ -14,10 +14,10 @@ const routes: Routes = [
     path: 'feed',
     component: MainComponent,
     children: [
-      { path: 'feed-time-line', component: FeedTimeLineComponent },
-      { path: 'feed-explore', component: FeedExploreComponent },
-      { path: 'feed-notifications', component: FeedNotificationsComponent },
-      { path: 'feed-messages', component: FeedMessagesComponent },
+      { path: 'time-line', component: FeedTimeLineComponent },
+      { path: 'explore', component: FeedExploreComponent },
+      { path: 'notifications', component: FeedNotificationsComponent },
+      { path: 'messages', component: FeedMessagesComponent },
     ],
   },
   { path: '', redirectTo: '/access', pathMatch: 'full' }, // redirect to `first-component`
@@ -25,7 +25,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

@@ -1,0 +1,16 @@
+.main__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(37, 145, 251, 0.98) 0.1%, hsl(252deg 100% 25% / 95%) 99.8%);
+    min-height: 100%;
+    width: 100%;
+}
+
+.w70 {
+    width: 1000px;
+}
+
+.w350 {
+    width: 350px;
+}

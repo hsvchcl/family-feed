@@ -1,0 +1,19 @@
+.timeline__container {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+.timeline_card_container {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.timeline_card {
+    width: auto;
+    padding: 20px;
+    background-color: white;
+    height: calc(100% - 40px);
+    border-radius: 20px;
+}

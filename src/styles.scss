@@ -1,0 +1,27 @@
+@import "~@angular/material/theming";
+$custom-typography: mat-typography-config(
+  $font-family: '"Montserrat", sans-serif;',
+);
+@include mat-core($custom-typography);
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.general__center_content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-weight: 600 !important;
+    color: rgb(18, 18, 18);
+    font-size: 2rem !important;
+}

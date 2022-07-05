@@ -18,6 +18,7 @@ import { FeedExploreComponent } from './feed/components/feed-explore/feed-explor
 import { FeedNotificationsComponent } from './feed/components/feed-notifications/feed-notifications.component';
 import { FeedMessagesComponent } from './feed/components/feed-messages/feed-messages.component';
 import { MainComponent } from './feed/layout/main/main.component';
+import { MenuBarComponent } from './feed/layout/menu-bar/menu-bar.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MainComponent } from './feed/layout/main/main.component';
     FeedNotificationsComponent,
     FeedMessagesComponent,
     MainComponent,
+    MenuBarComponent,
   ],
   imports: [
     BrowserModule,
